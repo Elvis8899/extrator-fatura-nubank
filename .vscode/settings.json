@@ -1,0 +1,6 @@
+{
+    "ruff.line-length": 80,
+    "ruff.configuration": {
+        "indent-width": 2
+    }
+}

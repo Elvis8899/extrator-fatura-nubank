@@ -1,0 +1,13 @@
+services:
+  tests:
+    build: .
+    container_name: test-fatura-nubank
+    image: elvis/fatura-nubank:latest
+    command: ["pytest", "test.py"]
+
+  app:
+    build: .
+    container_name: fatura-nubank
+    image: elvis/fatura-nubank:latest
+    volumes:
+      - ./output:/app/output
