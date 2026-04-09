@@ -157,7 +157,7 @@ def process_pdf(doc: Path) -> list[Register]:
   return process_parts(doc_info, parts)
 
 
-def process_parts(doc_info: dict[str, str, int | str | None], parts: list[str]) -> list[Register]:
+def process_parts(doc_info: dict[str, int | str | None], parts: list[str]) -> list[Register]:
   doc_name: str = doc_info["doc_name"]
   month: int = doc_info["month"]
   year: int = doc_info["year"]
